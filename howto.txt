@@ -1,0 +1,8 @@
+inside your lab folder (e.g lab01)
+alter CMakeLists.txt to be similiar to the one currently in the lab01 folder
+$ mkdir build
+$ cd build
+$ cmake ..
+$ make
+
+tada
