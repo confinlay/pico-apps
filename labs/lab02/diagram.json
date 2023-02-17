@@ -8,7 +8,11 @@
         "id": "pico",
         "top": 0,
         "left": 0,
-        "attrs": { "env": "arduino-core" }
+        "attrs": { 
+          "builder": "pico-sdk",
+          "env": "arduino-core" 
+        }
+        
       }
     ],
     "connections": [

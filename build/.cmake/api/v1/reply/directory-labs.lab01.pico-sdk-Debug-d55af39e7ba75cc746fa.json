@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "labs/lab01/pico-sdk",
+		"source" : "/Users/conor/Desktop/pico/pico-sdk"
+	}
+}

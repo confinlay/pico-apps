@@ -8,7 +8,9 @@
  * @return int  Application return code (zero for success).
  */
 
-void blink(int pin, int delay);
+void toggleon(int pin, int delay);
+void toggleoff(int pin, int delay);
+
 int main() {
     // Specify the PIN number and sleep delay
     const uint LED_PIN   =  25;
@@ -20,8 +22,9 @@ int main() {
 
     // Do forever...
     while (true) {
-        //Call blink function
-        blink(LED_PIN, LED_DELAY);
+        //Call toggle functions
+        toggleon(LED_PIN, LED_DELAY);
+        toggleoff(LED_PIN, LED_DELAY);
     }
 
     // Should never get here due to infinite while-loop.
@@ -29,13 +32,15 @@ int main() {
 
 }
 
-//Function to toggle the led on and off, taking LED pin and delay as parameters
-void blink(int pin, int delay){
-
+//Function to toggle the LED on, taking LED pin and delay as parameters
+void toggleon(int pin, int delay){
     // Toggle the LED on and then sleep for delay period
     gpio_put(pin, 1);
     sleep_ms(delay);
+}
 
+//Function to toggle the LED off, taking LED pin and delay as parameters
+void toggleoff(int pin, int delay){
     // Toggle the LED off and then sleep for delay period
     gpio_put(pin, 0);
     sleep_ms(delay);

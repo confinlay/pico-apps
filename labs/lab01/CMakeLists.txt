@@ -3,6 +3,7 @@ include(~/Desktop/pico/pico-apps/pico_sdk_import.cmake)
 project(lab01 CXX C ASM)
 
 pico_sdk_init()
+
 # Specify the name of the executable.
 add_executable(lab01
 	lab01.c
