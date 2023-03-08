@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.13)
 include(~/Desktop/pico/pico-apps/pico_sdk_import.cmake)
-project(lab01 CXX C ASM)
+project(lab03 CXX C ASM)
 
 pico_sdk_init()
 

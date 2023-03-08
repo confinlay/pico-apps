@@ -22,7 +22,7 @@
     "cmake.configureEnvironment": {
         "PICO_SDK_PATH": "/Users/conor/Desktop/pico/pico-sdk"
     },
-    "cmake.generator": "NMake Makefiles",
+    "cmake.generator": "Unix Makefiles",
     "cmake.configureOnOpen": true,
     "cmake.buildBeforeRun": true,
     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
@@ -34,5 +34,5 @@
         "*.S": "arm",
         "*.h": "c"
     },
-    "cmake.sourceDirectory": "${workspaceFolder}/pico-apps/labs/lab04"
+    "cmake.sourceDirectory": "${workspaceFolder}/labs/lab05",
 }

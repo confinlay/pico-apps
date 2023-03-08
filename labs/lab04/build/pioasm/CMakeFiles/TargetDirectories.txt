@@ -1,3 +1,0 @@
-/Users/conor/Desktop/pico/pico-apps/labs/lab04/build/pioasm/CMakeFiles/pioasm.dir
-/Users/conor/Desktop/pico/pico-apps/labs/lab04/build/pioasm/CMakeFiles/edit_cache.dir
-/Users/conor/Desktop/pico/pico-apps/labs/lab04/build/pioasm/CMakeFiles/rebuild_cache.dir

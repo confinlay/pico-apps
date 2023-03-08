@@ -1,0 +1,128 @@
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-VYpeyS
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_0da43/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_0da43.dir/build.make CMakeFiles/cmTC_0da43.dir/build
+Building C object CMakeFiles/cmTC_0da43.dir/CMakeCCompilerABI.c.o
+/opt/homebrew/bin/arm-none-eabi-gcc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk   -v -Wl,-v -o CMakeFiles/cmTC_0da43.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
+arm-none-eabi-gcc: error: unrecognized command-line option '-arch'; did you mean '-march='?
+Target: arm-none-eabi
+Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/src/gcc/configure --target=arm-none-eabi --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.2 (Build arm-12.24)' --with-bugurl=https://bugs.linaro.org/
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 12.2.1 20221205 (Arm GNU Toolchain 12.2 (Build arm-12.24)) 
+make[1]: *** [CMakeFiles/cmTC_0da43.dir/CMakeCCompilerABI.c.o] Error 1
+make: *** [cmTC_0da43/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-ZJWV0A
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_497a6/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_497a6.dir/build.make CMakeFiles/cmTC_497a6.dir/build
+Building C object CMakeFiles/cmTC_497a6.dir/testCCompiler.c.o
+/opt/homebrew/bin/arm-none-eabi-gcc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -o CMakeFiles/cmTC_497a6.dir/testCCompiler.c.o -c /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-ZJWV0A/testCCompiler.c
+arm-none-eabi-gcc: error: unrecognized command-line option '-arch'; did you mean '-march='?
+make[1]: *** [CMakeFiles/cmTC_497a6.dir/testCCompiler.c.o] Error 1
+make: *** [cmTC_497a6/fast] Error 2
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-mhwWuk
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_df8ac/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_df8ac.dir/build.make CMakeFiles/cmTC_df8ac.dir/build
+Building C object CMakeFiles/cmTC_df8ac.dir/CMakeCCompilerABI.c.o
+/opt/homebrew/bin/arm-none-eabi-gcc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk   -v -Wl,-v -o CMakeFiles/cmTC_df8ac.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
+arm-none-eabi-gcc: error: unrecognized command-line option '-arch'; did you mean '-march='?
+Target: arm-none-eabi
+Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/src/gcc/configure --target=arm-none-eabi --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.2 (Build arm-12.24)' --with-bugurl=https://bugs.linaro.org/
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 12.2.1 20221205 (Arm GNU Toolchain 12.2 (Build arm-12.24)) 
+make[1]: *** [CMakeFiles/cmTC_df8ac.dir/CMakeCCompilerABI.c.o] Error 1
+make: *** [cmTC_df8ac/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-ddGvls
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_3377f/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_3377f.dir/build.make CMakeFiles/cmTC_3377f.dir/build
+Building C object CMakeFiles/cmTC_3377f.dir/testCCompiler.c.o
+/opt/homebrew/bin/arm-none-eabi-gcc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -o CMakeFiles/cmTC_3377f.dir/testCCompiler.c.o -c /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-ddGvls/testCCompiler.c
+arm-none-eabi-gcc: error: unrecognized command-line option '-arch'; did you mean '-march='?
+make[1]: *** [CMakeFiles/cmTC_3377f.dir/testCCompiler.c.o] Error 1
+make: *** [cmTC_3377f/fast] Error 2
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-0my6NG
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_1bb76/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_1bb76.dir/build.make CMakeFiles/cmTC_1bb76.dir/build
+Building C object CMakeFiles/cmTC_1bb76.dir/CMakeCCompilerABI.c.o
+/opt/homebrew/bin/arm-none-eabi-gcc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk   -v -Wl,-v -o CMakeFiles/cmTC_1bb76.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
+arm-none-eabi-gcc: error: unrecognized command-line option '-arch'; did you mean '-march='?
+Target: arm-none-eabi
+Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/src/gcc/configure --target=arm-none-eabi --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.2 (Build arm-12.24)' --with-bugurl=https://bugs.linaro.org/
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 12.2.1 20221205 (Arm GNU Toolchain 12.2 (Build arm-12.24)) 
+make[1]: *** [CMakeFiles/cmTC_1bb76.dir/CMakeCCompilerABI.c.o] Error 1
+make: *** [cmTC_1bb76/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-nORGSH
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_14af7/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_14af7.dir/build.make CMakeFiles/cmTC_14af7.dir/build
+Building C object CMakeFiles/cmTC_14af7.dir/testCCompiler.c.o
+/opt/homebrew/bin/arm-none-eabi-gcc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -o CMakeFiles/cmTC_14af7.dir/testCCompiler.c.o -c /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-nORGSH/testCCompiler.c
+arm-none-eabi-gcc: error: unrecognized command-line option '-arch'; did you mean '-march='?
+make[1]: *** [CMakeFiles/cmTC_14af7.dir/testCCompiler.c.o] Error 1
+make: *** [cmTC_14af7/fast] Error 2
+
+
+
+Detecting C compiler ABI info failed to compile with the following output:
+Change Dir: /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-v9Jo7a
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_6501a/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_6501a.dir/build.make CMakeFiles/cmTC_6501a.dir/build
+Building C object CMakeFiles/cmTC_6501a.dir/CMakeCCompilerABI.c.o
+/opt/homebrew/bin/arm-none-eabi-gcc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk   -v -Wl,-v -o CMakeFiles/cmTC_6501a.dir/CMakeCCompilerABI.c.o -c /opt/homebrew/Cellar/cmake/3.25.2/share/cmake/Modules/CMakeCCompilerABI.c
+Using built-in specs.
+COLLECT_GCC=/opt/homebrew/bin/arm-none-eabi-gcc
+arm-none-eabi-gcc: error: unrecognized command-line option '-arch'; did you mean '-march='?
+Target: arm-none-eabi
+Configured with: /Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/src/gcc/configure --target=arm-none-eabi --prefix=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install --with-gmp=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpfr=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-mpc=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --with-isl=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/host-tools --disable-shared --disable-nls --disable-threads --disable-tls --enable-checking=release --enable-languages=c,c++,fortran --with-newlib --with-gnu-as --with-gnu-ld --with-sysroot=/Volumes/data/jenkins/workspace/GNU-toolchain/arm-12/build-arm-none-eabi/install/arm-none-eabi --with-multilib-list=aprofile,rmprofile --with-pkgversion='Arm GNU Toolchain 12.2 (Build arm-12.24)' --with-bugurl=https://bugs.linaro.org/
+Thread model: single
+Supported LTO compression algorithms: zlib
+gcc version 12.2.1 20221205 (Arm GNU Toolchain 12.2 (Build arm-12.24)) 
+make[1]: *** [CMakeFiles/cmTC_6501a.dir/CMakeCCompilerABI.c.o] Error 1
+make: *** [cmTC_6501a/fast] Error 2
+
+
+
+
+Determining if the C compiler works failed with the following output:
+Change Dir: /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-zW9PC2
+
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_22fab/fast && /Library/Developer/CommandLineTools/usr/bin/make  -f CMakeFiles/cmTC_22fab.dir/build.make CMakeFiles/cmTC_22fab.dir/build
+Building C object CMakeFiles/cmTC_22fab.dir/testCCompiler.c.o
+/opt/homebrew/bin/arm-none-eabi-gcc   -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.1.sdk -o CMakeFiles/cmTC_22fab.dir/testCCompiler.c.o -c /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/CMakeScratch/TryCompile-zW9PC2/testCCompiler.c
+arm-none-eabi-gcc: error: unrecognized command-line option '-arch'; did you mean '-march='?
+make[1]: *** [CMakeFiles/cmTC_22fab.dir/testCCompiler.c.o] Error 1
+make: *** [cmTC_22fab/fast] Error 2
+
+
+

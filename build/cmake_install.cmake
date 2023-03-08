@@ -1,4 +1,4 @@
-# Install script for directory: /Users/conor/Desktop/pico/pico-apps
+# Install script for directory: /Users/conor/Desktop/pico/pico-apps/labs/lab05
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,9 +40,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/Users/conor/Desktop/pico/pico-apps/build/pico-sdk/cmake_install.cmake")
-  include("/Users/conor/Desktop/pico/pico-apps/build/assignments/cmake_install.cmake")
-  include("/Users/conor/Desktop/pico/pico-apps/build/examples/cmake_install.cmake")
-  include("/Users/conor/Desktop/pico/pico-apps/build/labs/cmake_install.cmake")
 
 endif()
 

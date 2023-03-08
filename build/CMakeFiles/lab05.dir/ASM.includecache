@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/conor/Desktop/pico/pico-apps/labs/lab05/lab05.S
+hardware/regs/addressmap.h
+/Users/conor/Desktop/pico/pico-apps/labs/lab05/hardware/regs/addressmap.h
+hardware/regs/m0plus.h
+/Users/conor/Desktop/pico/pico-apps/labs/lab05/hardware/regs/m0plus.h
+
+/Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/platform_defs.h
+
+/Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/addressmap.h
+hardware/platform_defs.h
+/Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/hardware/platform_defs.h
+
+/Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/m0plus.h
+

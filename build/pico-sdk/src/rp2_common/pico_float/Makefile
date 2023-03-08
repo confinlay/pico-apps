@@ -57,7 +57,7 @@ RM = /opt/homebrew/Cellar/cmake/3.25.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/conor/Desktop/pico/pico-apps
+CMAKE_SOURCE_DIR = /Users/conor/Desktop/pico/pico-apps/labs/lab05
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/conor/Desktop/pico/pico-apps/build

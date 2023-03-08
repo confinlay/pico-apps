@@ -42,7 +42,7 @@ int asm_gpio_get(int pin) {
 /**
  * @brief Wrapper to allow the assembly code to call the gpio_put()
  *        SDK function.
- * 
+* 
  * @param pin       The GPIO pin number to write to.
  * @param value     Specify the value that the pin should be set to (0/1).
  */
@@ -68,3 +68,4 @@ int main() {
     // Returning zero indicates everything went okay.
     return 0;
 }
+  
