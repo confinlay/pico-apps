@@ -53,7 +53,7 @@ RM = /opt/homebrew/Cellar/cmake/3.25.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/conor/Desktop/pico/pico-apps/labs/lab05
+CMAKE_SOURCE_DIR = /Users/conor/Desktop/pico/pico-apps/assignments/assign01
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/conor/Desktop/pico/pico-apps/build
@@ -86,6 +86,6 @@ pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean:
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/clean
 
 pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend:
-	cd /Users/conor/Desktop/pico/pico-apps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/conor/Desktop/pico/pico-apps/labs/lab05 /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/boot_stage2 /Users/conor/Desktop/pico/pico-apps/build /Users/conor/Desktop/pico/pico-apps/build/pico-sdk/src/rp2_common/boot_stage2 /Users/conor/Desktop/pico/pico-apps/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/conor/Desktop/pico/pico-apps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/conor/Desktop/pico/pico-apps/assignments/assign01 /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/boot_stage2 /Users/conor/Desktop/pico/pico-apps/build /Users/conor/Desktop/pico/pico-apps/build/pico-sdk/src/rp2_common/boot_stage2 /Users/conor/Desktop/pico/pico-apps/build/pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/depend
 
