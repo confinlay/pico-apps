@@ -514,7 +514,7 @@ Disassembly of section .text:
 
 10000478 <btn_dn>:
 10000478:	2001      	movs	r0, #1
-1000047a:	42a8      	cmp	r0, r5
+1000047a:	4285      	cmp	r5, r0
 1000047c:	d001      	beq.n	10000482 <half>
 1000047e:	4823      	ldr	r0, [pc, #140]	; (1000050c <msg+0x4c>)
 10000480:	e013      	b.n	100004aa <alarm_reset>
@@ -539,7 +539,7 @@ Disassembly of section .text:
 
 1000049a <btn_up>:
 1000049a:	2001      	movs	r0, #1
-1000049c:	42a8      	cmp	r0, r5
+1000049c:	4285      	cmp	r5, r0
 1000049e:	d001      	beq.n	100004a4 <double>
 100004a0:	481c      	ldr	r0, [pc, #112]	; (10000514 <msg+0x54>)
 100004a2:	e002      	b.n	100004aa <alarm_reset>
