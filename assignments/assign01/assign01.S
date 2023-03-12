@@ -68,22 +68,56 @@ init_gpio_btn:
 
         pop     {pc}                    @ Pop the stored address to the program counter (return to main program)
 
-install_gpio_isr:
-        ldr     r2, =(PPB_BASE + M0PLUS_VTOR_OFFSET)            @ Load the address of the relocated Vector table base into r2
-        ldr     r1, [r2]                                        @ Load the value at memory address found in r2 to register r1                                        
-        movs    r2, #SVC_ISR_OFFSET                             @ Load the offset needed to arrive at entry 11 in the vector table
+set_alarm0:
+        push    {lr}
+        l
+
+.thumb_func                                                     @ Necessary for interrrupt handlers
+@ Alarm 0 interrupt handler
+install_gpio_isr: 
+        ldr     r2, #PPB_BASE                                   @ 
+        ldr     r1, [r2, #M0PLUS_VTOR_OFFSET]                   @                                         
+        movs    r2, #GPIO_ISR_OFFSET                            @ Load the offset needed to arrive at entry 29 in the vector table
         add     r2, r1                                          @ Add the offset to the table base and store in r2
-        ldr     r0, =svc_isr                                    @ Load the entry address of svc_isr into r0
+        ldr     r0, =gpio_isr                                   @ Load the entry address of gpio_isr into r0
         str     r0, [r2]                                        @ Store the address of the gpio_isr handler to the correct offset for GPIO in the vector table
     
-        ldr     r0, =(PPB_BASE + M0PLUS_NVIC_ICPR_OFFSET)       @ Load address into r0
+        ldr     r0, #PPB_BASE                                   @ Load address into r0
         movs    r2, #1                                          @ Move immediate value of 1 into r2
-        lsls    r2, #13                                         @ Bit single bit left 13 in order to choose int 13 in the vector table                          
-        str     r2, [r0]                                        @ Disable the previous interrupt by writing this new value to PPB_BASE + M0PLUS_NVIC_ICPR_OFFSET
-        ldr     r0, =(PPB_BASE + M0PLUS_NVIC_ISER_OFFSET)       @ Load address into r0                      
-        str     r2, [r0]                                        @ Disable the new interrupt by writing the current value to PPB_BASE + M0PLUS_NVIC_ISER_OFFSET
+        lsls    r2, #13                                         @ Bit logical shift left 13 in order to choose int 13 in the vector table                          
+        str     r2, [r0, #M0PLUS_NVIC_ICPR_OFFSET]              @ Disable the specific interrupt level by writing to the appropriate bit in (PPB_BASE + M0PLUS_NVIC_ICPR_OFFSET)           
+        str     r2, [r0, #M0PLUS_NVIC_ISER_OFFSET]              @ Enable the specific interrupt level by writing to the appropriate bit in (PPB_BASE + M0PLUS_NVIC_ICER_OFFSET)
     
-    bx      lr                                        @ Exit subroutine
+        bx      lr                                              @ Exit subroutine
+
+set_alarm0: 
+        push    {lr}
+
+        ldr     r2, #TIMER_BASE
+        mov     r1, #1
+        str     r1, [r2, #TIMER_INTE_OFFSET]
+
+        ldr     r1, [r2, #TIMER_TIMELR_OFFSET]
+        add     r1, r0
+        str     r1, [r2, #TIMER_ALARM0_OFFSET]
+
+        bx      lr
+
+install_alarm0_isr:
+        push    {lr}
+        @ Set IRQ Handler to our routine
+        ldr     r2, #PPB_BASE
+        ldr     r1, [r2, #M0PLUS_VTOR_OFFSET]
+        mov     r2, #ALRM_ISR_OFFSET
+        ldr     r0, =alrm_isr
+        str     r0, [r2, r1]
+
+        @ Enable alarm 0 IRQ (clear then set)
+        mov     r0, #1
+        ldr     r2, #PPB_BASE
+        str     r0, [r2, M0PLUS_NVIC_ICER_OFFSET]
+
+        bx      lr
 
 
 .align 4
