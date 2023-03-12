@@ -1379,8 +1379,8 @@ pico-sdk/tools/clean:
 # Target rules for target CMakeFiles/assign01.dir
 
 # All Build rule for target.
-CMakeFiles/assign01.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 CMakeFiles/assign01.dir/all: CMakeFiles/ELF2UF2Build.dir/all
+CMakeFiles/assign01.dir/all: pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign01.dir/build.make CMakeFiles/assign01.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign01.dir/build.make CMakeFiles/assign01.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/Users/conor/Desktop/pico/pico-apps/assignments/assign01/build/CMakeFiles --progress-num=17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64 "Built target assign01"

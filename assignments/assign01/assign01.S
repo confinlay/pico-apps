@@ -197,7 +197,9 @@ btn_dn:
         beq     half                                            @ If it is, branch to half
         ldr     r0, =GPIO_BTN_DN_MSK                            @ Else, reload bit-18 into r0 to indicate a falling edge event for GP20 
         b       alarm_reset                                     @ Branch to alarm_reset
-half:
+half:   
+        ldr     r0, =half_speed_msg                             @ Print message to console
+        bl      printf
         lsls    r4, #1                                          @ Shift bits left by 1 in alarm time to half it
         ldr     r0, =GPIO_BTN_DN_MSK                            @ Reload bit-18 into r0 to indicate a falling edge event for GP20 into r0
         b       finish                                          @ Branch to finish       
@@ -206,11 +208,15 @@ btn_en:
         movs    r0, #DFLT_STATE_STRT                            @ Move the value which indicates that the alarm is enabled into r0                 
         cmp     r5, r0                                          @ Check if this is equal to the current state of the alarm
         beq     alarm_disable                                   @ If it is, branch to alarm_disable
+        ldr     r0, =alarm_enabled_msg
+        bl      printf
         ldr     r0, =GPIO_BTN_EN_MSK                            @ Else, reload bit-22 into r0 to indicate a falling edge event for GP21 
         movs    r5, #DFLT_STATE_STRT                            @ Enable the alarm
         b       finish                                          @ Branch to finish
 
 alarm_disable:
+        ldr     r0, =alarm_disabled_msg                         @ Print message to console
+        bl      printf
         ldr     r0, =GPIO_BTN_EN_MSK                            @ Reload bit-22 into r0 to indicate a falling edge event for GP21 
         movs    r5, #DFLT_STATE_STOP                            @ Disable the alarm
         b       finish                                          @ Branch to finish
@@ -222,10 +228,16 @@ btn_up:
         ldr     r0, =GPIO_BTN_UP_MSK                            @ Reload bit-29 into r0 to indicate a falling edge event for GP22 
         b       alarm_reset                                     @ Branch to alarm_reset
 double:
+        ldr     r0, =double_speed_msg                           @ Print message to console
+        bl      printf
         lsrs    r4, #1                                          @ Shift the alarm time right by 1 bit to double it
         ldr     r0, =GPIO_BTN_UP_MSK                            @ Reload bit-29 into r0 to indicate a falling edge event for GP22
         b       finish                                          @ Branch to finish
 alarm_reset:
+        push    {r0}                                            @ Push r0 to stack as it will be overwritten by printf subroutine
+        ldr     r0, =reset_alarm_msg                            @ Print message to console
+        bl      printf
+        pop     {r0}
         ldr     r4, =DFLT_ALARM_TIME                            @ Reset the alarm time to the default alarm time
 
 finish:
@@ -235,7 +247,11 @@ finish:
         pop     {pc}                                            @ Exit subroutine
 
 .align 4
-msg:    .asciz "Hello World!\n"
+alarm_enabled_msg:      .asciz "LED flashing enabled\n"
+alarm_disabled_msg:     .asciz "LED flashing disabled\n"
+reset_alarm_msg:        .asciz "LED flashing speed reset to default value\n"
+double_speed_msg:       .asciz "LED flashing speed doubled\n"
+half_speed_msg:         .asciz "LED flashing speed halved\n"
 
 .data
 lstate: .word   DFLT_STATE_STRT
