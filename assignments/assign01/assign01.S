@@ -45,7 +45,7 @@ main_asm:
         bl      btn_set_irqs
 
         bl      install_alarm0_isr
-        @ bl      install_gpio_isr
+        bl      install_gpio_isr
 
 main_loop:
         bl      set_alarm0
@@ -86,9 +86,9 @@ btn_set_irqs:
 
 
 @ Alarm 0 interrupt handler
-/*install_gpio_isr: 
-        ldr     r2, =(PPB_BASE + M0PLUS_VTOR_OFFSET)                                   @ 
-        ldr     r1, [r2]                   @                                         
+install_gpio_isr: 
+        ldr     r2, =(PPB_BASE + M0PLUS_VTOR_OFFSET)            @ 
+        ldr     r1, [r2]                                        @                                         
         ldr     r2, =GPIO_ISR_OFFSET                            @ Load the offset needed to arrive at entry 29 in the vector table
         add     r2, r1                                          @ Add the offset to the table base and store in r2
         ldr     r0, =gpio_isr                                   @ Load the entry address of gpio_isr into r0
@@ -101,7 +101,7 @@ btn_set_irqs:
         ldr     r0, =(PPB_BASE + M0PLUS_NVIC_ISER_OFFSET)
         str     r2, [r0]                                        @ Enable the specific interrupt level by writing to the appropriate bit in (PPB_BASE + M0PLUS_NVIC_ISER_OFFSET)
     
-        bx      lr                                              @ Exit subroutine*/
+        bx      lr                                              @ Exit subroutine
 
 set_alarm0: 
         ldr     r2, =(TIMER_BASE + TIMER_INTE_OFFSET)
@@ -161,7 +161,72 @@ end:
         str     r0, [r1]
 
         pop     {pc}
+.thumb_func
+gpio_isr:
+        push    {lr}
 
+        ldr     r2, =(IO_BANK0_BASE + IO_BANK0_PROC0_INTS2_OFFSET)
+
+        ldr     r1, [r2]
+        ldr     r0, =GPIO_BTN_DN_MSK
+        ands    r1, r0
+        cmp     r1, r0
+        beq     btn_dn
+
+        ldr     r1, [r2]
+        ldr     r0, =GPIO_BTN_EN_MSK
+        ands    r1, r0
+        cmp     r1, r0
+        beq     btn_en
+
+        ldr     r1, [r2]
+        ldr     r0, =GPIO_BTN_UP_MSK
+        ands    r1, r0
+        cmp     r1, r0
+        beq     btn_up
+
+btn_dn:
+        movs    r0, #DFLT_STATE_STRT
+        cmp     r0, r5
+        beq     half
+        ldr     r0, =GPIO_BTN_DN_MSK
+        b       alarm_reset
+half:
+        lsls    r4, #1
+        ldr     r0, =GPIO_BTN_DN_MSK
+        b       finish
+
+btn_en:
+        movs    r0, #DFLT_STATE_STRT
+        cmp     r5, r0
+        beq     alarm_disable
+        ldr     r0, =GPIO_BTN_EN_MSK
+        movs    r5, #DFLT_STATE_STRT
+        b       finish
+
+alarm_disable:
+        ldr     r0, =GPIO_BTN_EN_MSK
+        movs    r5, #DFLT_STATE_STOP
+        b       finish
+
+btn_up:
+        movs    r0, #DFLT_STATE_STRT
+        cmp     r0, r5
+        beq     double
+        ldr     r0, =GPIO_BTN_UP_MSK
+        b       alarm_reset
+double:
+        lsrs    r4, #1
+        ldr     r0, =GPIO_BTN_UP_MSK
+        b       finish
+alarm_reset:
+        ldr     r4, =DFLT_ALARM_TIME
+
+finish:
+        ldr     r2, =(IO_BANK0_BASE + IO_BANK0_INTR2_OFFSET)
+        str     r0, [r2]
+
+        pop     {pc}
 
 .align 4
 msg:    .asciz "Hello World!\n"

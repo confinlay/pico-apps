@@ -1048,9 +1048,9 @@ Discarded input sections
                 0x0000000000000000        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr49
                 0x0000000000000000        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .text          0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccniBVwT.o
- .data          0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccniBVwT.o
- .bss           0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccniBVwT.o
+ .text          0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctQKeP1.o
+ .data          0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctQKeP1.o
+ .bss           0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctQKeP1.o
  .data          0x0000000000000000        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-calloc.o)
@@ -1387,11 +1387,11 @@ LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccniBVwT.o
+ .boot2         0x0000000010000000      0x100 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctQKeP1.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x1e38
+.text           0x0000000010000100     0x1ed8
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1475,195 +1475,196 @@ LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x000000001000035c       0x18 CMakeFiles/assign01.dir/assign01.c.obj
                 0x000000001000035c                main
  *fill*         0x0000000010000374        0xc 
- .text          0x0000000010000380      0x100 CMakeFiles/assign01.dir/assign01.S.obj
+ .text          0x0000000010000380      0x19c CMakeFiles/assign01.dir/assign01.S.obj
                 0x0000000010000380                main_asm
  .text.gpio_set_function
-                0x0000000010000480       0x30 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000480                gpio_set_function
+                0x000000001000051c       0x30 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x000000001000051c                gpio_set_function
  .text.gpio_set_irq_enabled
-                0x00000000100004b0       0x54 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x00000000100004b0                gpio_set_irq_enabled
+                0x000000001000054c       0x54 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x000000001000054c                gpio_set_irq_enabled
  .text.gpio_init
-                0x0000000010000504       0x3c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010000504                gpio_init
+                0x00000000100005a0       0x3c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x00000000100005a0                gpio_init
  .text.hw_claim_or_assert
-                0x0000000010000540       0x44 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x0000000010000540                hw_claim_or_assert
+                0x00000000100005dc       0x44 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100005dc                hw_claim_or_assert
  .text.running_on_fpga
-                0x0000000010000584       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x0000000010000584                running_on_fpga
+                0x0000000010000620       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x0000000010000620                running_on_fpga
  .text.spin_locks_reset
-                0x0000000010000594       0x1c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000594                spin_locks_reset
+                0x0000000010000630       0x1c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000630                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x00000000100005b0       0x18 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x00000000100005b0                next_striped_spin_lock_num
+                0x000000001000064c       0x18 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x000000001000064c                next_striped_spin_lock_num
  .text.irq_set_enabled
-                0x00000000100005c8       0x24 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100005c8                irq_set_enabled
+                0x0000000010000664       0x24 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000664                irq_set_enabled
  .text.irq_get_vtable_handler
-                0x00000000100005ec       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100005ec                irq_get_vtable_handler
+                0x0000000010000688       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000688                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x00000000100005fc       0x54 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100005fc                irq_set_exclusive_handler
+                0x0000000010000698       0x54 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010000698                irq_set_exclusive_handler
  .text.irq_remove_handler
-                0x0000000010000650      0x1cc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010000650                irq_remove_handler
+                0x00000000100006ec      0x1cc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100006ec                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x000000001000081c       0xb4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x000000001000081c                irq_add_tail_to_free_list
+                0x00000000100008b8       0xb4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100008b8                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x00000000100008d0       0x24 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100008d0                irq_init_priorities
+                0x000000001000096c       0x24 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000096c                irq_init_priorities
  .text.lock_init
-                0x00000000100008f4       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x00000000100008f4                lock_init
+                0x0000000010000990       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010000990                lock_init
  .text.timer_pool_entry_comparator
-                0x0000000010000904       0x34 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000904                timer_pool_entry_comparator
+                0x00000000100009a0       0x34 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100009a0                timer_pool_entry_comparator
  .text.add_alarm_under_lock.isra.0
-                0x0000000010000938      0x100 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100009d4      0x100 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x0000000010000a38      0x1c4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000ad4      0x1c4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010000bfc       0x64 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000bfc                alarm_pool_init_default
+                0x0000000010000c98       0x64 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000c98                alarm_pool_init_default
  .text.hardware_alarm_irq_handler
-                0x0000000010000c60       0xb8 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000cfc       0xb8 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x0000000010000d18       0x18 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000d18                hardware_alarm_claim
+                0x0000000010000db4       0x18 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000db4                hardware_alarm_claim
  .text.time_us_64
-                0x0000000010000d30       0x14 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000d30                time_us_64
+                0x0000000010000dcc       0x14 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000dcc                time_us_64
  .text.hardware_alarm_set_callback
-                0x0000000010000d44       0x8c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000d44                hardware_alarm_set_callback
+                0x0000000010000de0       0x8c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000de0                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010000dd0       0xdc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000dd0                hardware_alarm_set_target
+                0x0000000010000e6c       0xdc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000e6c                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010000eac       0x3c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010000eac                hardware_alarm_cancel
+                0x0000000010000f48       0x3c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010000f48                hardware_alarm_cancel
  .text.ph_merge_nodes
-                0x0000000010000ee8       0x64 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010000f84       0x64 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x0000000010000f4c       0x3c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010000f4c                ph_post_alloc_init
+                0x0000000010000fe8       0x3c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010000fe8                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x0000000010000f88       0x98 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010000f88                ph_merge_two_pass
+                0x0000000010001024       0x98 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001024                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000010001020      0x12c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100010bc      0x12c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x000000001000114c      0x130 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x000000001000114c                ph_remove_head
+                0x00000000100011e8      0x130 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100011e8                ph_remove_head
  .text.ph_remove_and_free_node
-                0x000000001000127c       0x78 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x000000001000127c                ph_remove_and_free_node
+                0x0000000010001318       0x78 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001318                ph_remove_and_free_node
  .text.mutex_init
-                0x00000000100012f4       0x1c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000100012f4                mutex_init
+                0x0000000010001390       0x1c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001390                mutex_init
  .text.recursive_mutex_init
-                0x0000000010001310       0x1c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x0000000010001310                recursive_mutex_init
+                0x00000000100013ac       0x1c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x00000000100013ac                recursive_mutex_init
  .text.uart_init
-                0x000000001000132c       0xe0 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
-                0x000000001000132c                uart_init
+                0x00000000100013c8       0xe0 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+                0x00000000100013c8                uart_init
  .text.runtime_init
-                0x000000001000140c       0xf0 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x000000001000140c                runtime_init
- .text.exit     0x00000000100014fc        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x00000000100014fc                exit
- .text.panic    0x0000000010001500       0x30 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001500                panic
+                0x00000000100014a8       0xf0 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100014a8                runtime_init
+ .text.exit     0x0000000010001598        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010001598                exit
+ .text.panic    0x000000001000159c       0x30 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000159c                panic
  .text.hard_assertion_failure
-                0x0000000010001530        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010001530                hard_assertion_failure
+                0x00000000100015cc        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x00000000100015cc                hard_assertion_failure
  .text.clocks_init
-                0x000000001000153c      0x2b4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x000000001000153c                clocks_init
+                0x00000000100015d8      0x2b4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x00000000100015d8                clocks_init
  .text.clock_get_hz
-                0x00000000100017f0        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x00000000100017f0                clock_get_hz
+                0x000000001000188c        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x000000001000188c                clock_get_hz
  .text.pll_init
-                0x00000000100017fc       0xa8 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x00000000100017fc                pll_init
+                0x0000000010001898       0xa8 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x0000000010001898                pll_init
  .text.watchdog_start_tick
-                0x00000000100018a4       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x00000000100018a4                watchdog_start_tick
+                0x0000000010001940       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010001940                watchdog_start_tick
  .text.xosc_init
-                0x00000000100018b4       0x28 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x00000000100018b4                xosc_init
+                0x0000000010001950       0x28 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x0000000010001950                xosc_init
  .text._out_char
-                0x00000000100018dc       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001978       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.weak_raw_vprintf
-                0x00000000100018ec       0x30 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x00000000100018ec                weak_raw_vprintf
- .text          0x000000001000191c       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010001988       0x30 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010001988                weak_raw_vprintf
+ .text          0x00000000100019b8       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x000000001000192c       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x000000001000192c                rom_func_lookup
+                0x00000000100019c8       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000100019c8                rom_func_lookup
  .text.rom_data_lookup
-                0x000000001000193c       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x000000001000193c                rom_data_lookup
+                0x00000000100019d8       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000100019d8                rom_data_lookup
  .text.rom_funcs_lookup
-                0x000000001000194c       0x44 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x000000001000194c                rom_funcs_lookup
+                0x00000000100019e8       0x44 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000100019e8                rom_funcs_lookup
  .text.__wrap___aeabi_uidiv
-                0x0000000010001990       0x4c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010001990                __wrap___aeabi_uidiv
-                0x0000000010001990                __wrap___aeabi_uidivmod
-                0x0000000010001990                div_u32u32
-                0x0000000010001990                divmod_u32u32
-                0x0000000010001998                divmod_u32u32_unsafe
-                0x00000000100019c0                divmod_u32u32_savestate
+                0x0000000010001a2c       0x4c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010001a2c                __wrap___aeabi_uidiv
+                0x0000000010001a2c                __wrap___aeabi_uidivmod
+                0x0000000010001a2c                div_u32u32
+                0x0000000010001a2c                divmod_u32u32
+                0x0000000010001a34                divmod_u32u32_unsafe
+                0x0000000010001a5c                divmod_u32u32_savestate
  .text.__aeabi_double_init
-                0x00000000100019dc       0x98 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x00000000100019dc                __aeabi_double_init
+                0x0000000010001a78       0x98 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010001a78                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010001a74       0x2c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010001a74                double_table_shim_on_use_helper
+                0x0000000010001b10       0x2c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x0000000010001b10                double_table_shim_on_use_helper
  .text.__aeabi_float_init
-                0x0000000010001aa0       0x64 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010001aa0                __aeabi_float_init
+                0x0000000010001b3c       0x64 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010001b3c                __aeabi_float_init
  .text.float_table_shim_on_use_helper
-                0x0000000010001b04       0x2c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
-                0x0000000010001b04                float_table_shim_on_use_helper
- .text          0x0000000010001b30       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010001b30                __aeabi_mem_init
- .text.memcpy   0x0000000010001b40        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x0000000010001b40                __wrap___aeabi_memcpy
-                0x0000000010001b40                __wrap_memcpy
+                0x0000000010001ba0       0x2c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+                0x0000000010001ba0                float_table_shim_on_use_helper
+ .text          0x0000000010001bcc       0x10 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010001bcc                __aeabi_mem_init
+ .text.memcpy   0x0000000010001bdc        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010001bdc                __wrap___aeabi_memcpy
+                0x0000000010001bdc                __wrap_memcpy
  .text.stdio_out_chars_crlf
-                0x0000000010001b4c       0xbc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010001be8       0xbc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x0000000010001c08       0xa4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010001c08                __wrap_putchar
+                0x0000000010001ca4       0xa4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010001ca4                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010001cac       0xe8 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010001cac                __wrap_puts
+                0x0000000010001d48       0xe8 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010001d48                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000010001d94       0x30 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010001d94                stdio_set_driver_enabled
+                0x0000000010001e30       0x30 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010001e30                stdio_set_driver_enabled
  .text.stdio_init_all
-                0x0000000010001dc4        0x8 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010001dc4                stdio_init_all
+                0x0000000010001e60        0x8 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010001e60                stdio_init_all
  .text.stdio_uart_out_chars
-                0x0000000010001dcc       0x4c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010001e68       0x4c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .text.stdio_uart_in_chars
-                0x0000000010001e18       0x38 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010001e18                stdio_uart_in_chars
+                0x0000000010001eb4       0x38 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010001eb4                stdio_uart_in_chars
  .text.stdio_uart_init
-                0x0000000010001e50       0x48 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010001e50                stdio_uart_init
- .text.strlen   0x0000000010001e98       0x5c /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-strlen-stub.o)
-                0x0000000010001e98                strlen
+                0x0000000010001eec       0x48 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010001eec                stdio_uart_init
+ .text.strlen   0x0000000010001f34       0x5c /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-strlen-stub.o)
+                0x0000000010001f34                strlen
  *(.fini)
- .fini          0x0000000010001ef4        0x4 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crti.o
-                0x0000000010001ef4                _fini
- .fini.__stub   0x0000000010001ef8       0x40 linker stubs
+ .fini          0x0000000010001f90        0x4 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crti.o
+                0x0000000010001f90                _fini
+ *fill*         0x0000000010001f94        0x4 
+ .fini.__stub   0x0000000010001f98       0x40 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -1675,95 +1676,95 @@ LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x0000000010001f38        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010001f38                . = ALIGN (0x4)
+ .eh_frame      0x0000000010001fd8        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010001fd8                . = ALIGN (0x4)
 
-.glue_7         0x0000000010001f38        0x0
- .glue_7        0x0000000010001f38        0x0 linker stubs
+.glue_7         0x0000000010001fd8        0x0
+ .glue_7        0x0000000010001fd8        0x0 linker stubs
 
-.glue_7t        0x0000000010001f38        0x0
- .glue_7t       0x0000000010001f38        0x0 linker stubs
+.glue_7t        0x0000000010001fd8        0x0
+ .glue_7t       0x0000000010001fd8        0x0 linker stubs
 
-.vfp11_veneer   0x0000000010001f38        0x0
- .vfp11_veneer  0x0000000010001f38        0x0 linker stubs
+.vfp11_veneer   0x0000000010001fd8        0x0
+ .vfp11_veneer  0x0000000010001fd8        0x0 linker stubs
 
-.v4_bx          0x0000000010001f38        0x0
- .v4_bx         0x0000000010001f38        0x0 linker stubs
+.v4_bx          0x0000000010001fd8        0x0
+ .v4_bx         0x0000000010001fd8        0x0 linker stubs
 
-.iplt           0x0000000010001f38        0x0
- .iplt          0x0000000010001f38        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010001fd8        0x0
+ .iplt          0x0000000010001fd8        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000010001f38      0x100
+.rodata         0x0000000010001fd8      0x100
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.main.str1.4
-                0x0000000010001f38       0x11 CMakeFiles/assign01.dir/assign01.c.obj
- *fill*         0x0000000010001f49        0x3 
+                0x0000000010001fd8       0x11 CMakeFiles/assign01.dir/assign01.c.obj
+ *fill*         0x0000000010001fe9        0x3 
  .rodata.hardware_alarm_claim.str1.4
-                0x0000000010001f4c       0x22 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x0000000010001f6e        0x2 
+                0x0000000010001fec       0x22 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x000000001000200e        0x2 
  .rodata.panic.str1.4
-                0x0000000010001f70       0x12 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x0000000010001f82        0x2 
+                0x0000000010002010       0x12 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+ *fill*         0x0000000010002022        0x2 
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010001f84        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002024        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata.str1.4
-                0x0000000010001f90       0x40 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002030       0x40 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x0000000010001fd0        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002070        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x0000000010001fdc        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x000000001000207c        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x0000000010001fe8        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010002088        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x0000000010001ff4        0x2 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x0000000010001ff6        0x2 
+                0x0000000010002094        0x2 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x0000000010002096        0x2 
  .rodata.str1.4
-                0x0000000010001ff8       0x2c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x0000000010002098       0x2c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_28.4
-                0x0000000010002024        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100020c4        0xc CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .rodata.__bi_29.5
-                0x0000000010002030        0x8 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x0000000010002038                . = ALIGN (0x4)
+                0x00000000100020d0        0x8 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100020d8                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010002038                . = ALIGN (0x4)
+                0x00000000100020d8                . = ALIGN (0x4)
 
-.rel.dyn        0x0000000010002038        0x0
- .rel.iplt      0x0000000010002038        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+.rel.dyn        0x00000000100020d8        0x0
+ .rel.iplt      0x00000000100020d8        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010002038                __exidx_start = .
+                0x00000000100020d8                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010002038                __exidx_end = .
-                0x0000000010002038                . = ALIGN (0x4)
-                0x0000000010002038                __binary_info_start = .
+                0x00000000100020d8                __exidx_end = .
+                0x00000000100020d8                . = ALIGN (0x4)
+                0x00000000100020d8                __binary_info_start = .
 
-.binary_info    0x0000000010002038       0x24
+.binary_info    0x00000000100020d8       0x24
  *(.binary_info.keep.*)
  .binary_info.keep.__bi_ptr81
-                0x0000000010002038        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100020d8        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x000000001000203c        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100020dc        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010002040        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100020e0        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x0000000010002044        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100020e4        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010002048        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100020e8        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x000000001000204c        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100020ec        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr22
-                0x0000000010002050        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x00000000100020f0        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr29
-                0x0000000010002054        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100020f4        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr28
-                0x0000000010002058        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-                0x000000001000205c                __binary_info_end = .
-                0x000000001000205c                . = ALIGN (0x4)
-                0x000000001000205c                __etext = .
+                0x00000000100020f8        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+                0x00000000100020fc                __binary_info_end = .
+                0x00000000100020fc                . = ALIGN (0x4)
+                0x00000000100020fc                __etext = .
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -1772,7 +1773,7 @@ LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x0000000020000000       0xc0 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0x180 load address 0x000000001000205c
+.data           0x00000000200000c0      0x180 load address 0x00000000100020fc
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -1853,33 +1854,33 @@ LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
                 0x0000000020000240                __data_end__ = .
 
 .tm_clone_table
-                0x0000000020000240        0x0 load address 0x00000000100021dc
+                0x0000000020000240        0x0 load address 0x000000001000227c
  .tm_clone_table
                 0x0000000020000240        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020000240        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000240        0x0 load address 0x00000000100021dc
+.igot.plt       0x0000000020000240        0x0 load address 0x000000001000227c
  .igot.plt      0x0000000020000240        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020000240        0x0 load address 0x00000000100021dc
+                0x0000000020000240        0x0 load address 0x000000001000227c
                 0x0000000020000240                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x00000000100021dc
+.scratch_x      0x0000000020040000        0x0 load address 0x000000001000227c
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x00000000100021dc                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x000000001000227c                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x00000000100021dc
+.scratch_y      0x0000000020041000        0x0 load address 0x000000001000227c
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x00000000100021dc                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x000000001000227c                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x0000000020000240      0x3d0
                 0x0000000020000240                . = ALIGN (0x4)
@@ -1941,8 +1942,8 @@ LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x00000000100021dc        0x0
-                0x00000000100021dc                __flash_binary_end = .
+.flash_end      0x000000001000227c        0x0
+                0x000000001000227c                __flash_binary_end = .
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -1998,7 +1999,7 @@ LOAD CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pi
 LOAD CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 LOAD CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 LOAD CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-LOAD /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccniBVwT.o
+LOAD /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctQKeP1.o
 LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2090,7 +2091,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000592       0x2c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .ARM.attributes
-                0x00000000000005be       0x22 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccniBVwT.o
+                0x00000000000005be       0x22 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctQKeP1.o
  .ARM.attributes
                 0x00000000000005e0       0x1e /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes
