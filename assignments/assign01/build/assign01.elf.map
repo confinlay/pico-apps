@@ -985,9 +985,9 @@ Discarded input sections
                 0x0000000000000000        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .binary_info.__bi_ptr49
                 0x0000000000000000        0x4 CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
- .text          0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctrepxU.o
- .data          0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctrepxU.o
- .bss           0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctrepxU.o
+ .text          0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccRzJAss.o
+ .data          0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccRzJAss.o
+ .bss           0x0000000000000000        0x0 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccRzJAss.o
  .data          0x0000000000000000        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000        0x0 /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(libc_a-calloc.o)
@@ -1324,7 +1324,7 @@ LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-no
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctrepxU.o
+ .boot2         0x0000000010000000      0x100 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccRzJAss.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
@@ -2050,7 +2050,7 @@ LOAD CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pi
 LOAD CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 LOAD CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 LOAD CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
-LOAD /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctrepxU.o
+LOAD /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccRzJAss.o
 LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/../../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2142,7 +2142,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000592       0x2c CMakeFiles/assign01.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
  .ARM.attributes
-                0x00000000000005be       0x22 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//cctrepxU.o
+                0x00000000000005be       0x22 /var/folders/tb/ccwl9r592hn9v_xpq9s1bzlr0000gn/T//ccRzJAss.o
  .ARM.attributes
                 0x00000000000005e0       0x1e /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/bin/../lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

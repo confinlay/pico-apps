@@ -34,6 +34,7 @@
 main_asm:
         ldr     r4, =DFLT_ALARM_TIME    @ This register will store the current alarm time for the duration of our program
         ldr     r5, =DFLT_STATE_STRT    @ This register will store the current state of the alarm (on/off) for the duration of our program
+
         @ Initialise LED pin and BTN pins
         bl      init_gpio_led           @ Initialiase the GPIO LED pin
         movs    r0, #GPIO_BTN_EN        @ Pass "enter" button pin as a parameter to the following subroutine
@@ -44,13 +45,14 @@ main_asm:
         bl      init_gpio_btn           @ Call the subroutine which initialises the GPIO button pin
         bl      btn_set_irqs            @ Call the subroutine which enables button interrupts
 
+        @ Install interrupt service routines
         bl      install_alarm0_isr
         bl      install_gpio_isr
 
 main_loop:
-        bl      set_alarm0
-        wfi
-        b       main_loop
+        bl      set_alarm0              @ Set the alarm with the current alarm time
+        wfi                             @ Wait for an interrupt
+        b       main_loop               @ Loop       
 
 @ Initialises the GPIO LED pin on the Pi PICO board
 init_gpio_led:
@@ -85,7 +87,7 @@ btn_set_irqs:
         movs    r0, #GPIO_BTN_UP        @ This value is the GP22 button pin on the PI PICO board
         bl      asm_gpio_set_irq        @ Enables a falling-edge interrupt for the GP22 button
 
-        pop {pc}                        @ Push the contents of the link register onto the stack
+        pop {pc}                        @ Pop the contents of the link register onto the stack
 
 
 @ Alarm 0 interrupt handler
@@ -146,6 +148,7 @@ alarm_isr:
         movs    r0, #DFLT_STATE_STOP                            @ Store the value which indicates that the alarm is disabled in r0
         cmp     r5, r0                                          @ If the alarm is disabled...       
         beq     end                                             @ Branch to end of subroutine
+
         @ Toggle LED
         ldr     r0, =GPIO_LED_PIN                               @ This value is the GPIO LED pin on the PI PICO board     
         bl      asm_gpio_get                                    @ Get the current state of the LED 
@@ -169,6 +172,7 @@ end:
 .thumb_func
 gpio_isr:
         @ Perform desired functions depending on which button was pressed and under what conditions
+        
         push    {lr}                                                    @ Push the link register to the stack
 
         ldr     r2, =(IO_BANK0_BASE + IO_BANK0_PROC0_INTS2_OFFSET)      @ Load the memory address of the GPIO raw interrupts #2 register
