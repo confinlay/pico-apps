@@ -1491,7 +1491,7 @@
 				}
 			],
 			"type" : "INTERNAL",
-			"value" : " /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/cmsis /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs"
+			"value" : " /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/cmsis /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/cmsis /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs"
 		},
 		{
 			"name" : "PICO_DOXYGEN_PATHS",
@@ -1732,6 +1732,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "91fa6b41055f536ea0963b4ef9ef5b99"
+		},
+		{
+			"name" : "_Python3_Interpreter_REASON_FAILURE",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Interpreter reason failure"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : ""
 		},
 		{
 			"name" : "_Python3_NumPy_REASON_FAILURE",

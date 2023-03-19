@@ -7,13 +7,13 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/Users/conor/Desktop/pico/pico-apps/assignments/assign01/CMakeLists.txt"
   "CMakeFiles/3.25.2/CMakeASMCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeCCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.25.2/CMakeSystem.cmake"
   "elf2uf2/tmp/ELF2UF2Build-mkdirs.cmake"
   "pico-sdk/src/rp2_common/cyw43_driver/pioasm/tmp/PioasmBuild-mkdirs.cmake"
-  "/Users/conor/Desktop/pico/pico-apps/labs/lab06/CMakeLists.txt"
   "/Users/conor/Desktop/pico/pico-apps/pico_sdk_import.cmake"
   "/Users/conor/Desktop/pico/pico-sdk/CMakeLists.txt"
   "/Users/conor/Desktop/pico/pico-sdk/cmake/Platform/PICO.cmake"
@@ -230,7 +230,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/lab06.dir/DependInfo.cmake"
+  "CMakeFiles/assign01.dir/DependInfo.cmake"
   "CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default.dir/DependInfo.cmake"
   "pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin.dir/DependInfo.cmake"
