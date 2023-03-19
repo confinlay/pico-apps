@@ -53,7 +53,7 @@ RM = /opt/homebrew/Cellar/cmake/3.25.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/conor/Desktop/pico/pico-apps/assignments/assign01
+CMAKE_SOURCE_DIR = /Users/conor/Desktop/pico/pico-apps/labs/lab06
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/conor/Desktop/pico/pico-apps/build
@@ -86,6 +86,6 @@ pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/clean
 
 pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend:
-	cd /Users/conor/Desktop/pico/pico-apps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/conor/Desktop/pico/pico-apps/assignments/assign01 /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/cyw43_driver /Users/conor/Desktop/pico/pico-apps/build /Users/conor/Desktop/pico/pico-apps/build/pico-sdk/src/rp2_common/cyw43_driver /Users/conor/Desktop/pico/pico-apps/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/conor/Desktop/pico/pico-apps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/conor/Desktop/pico/pico-apps/labs/lab06 /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/cyw43_driver /Users/conor/Desktop/pico/pico-apps/build /Users/conor/Desktop/pico/pico-apps/build/pico-sdk/src/rp2_common/cyw43_driver /Users/conor/Desktop/pico/pico-apps/build/pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : pico-sdk/src/rp2_common/cyw43_driver/CMakeFiles/cyw43_driver_picow_cyw43_bus_pio_spi_pio_h.dir/depend
 

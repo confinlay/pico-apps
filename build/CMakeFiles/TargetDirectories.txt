@@ -1,4 +1,4 @@
-/Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/assign01.dir
+/Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/lab06.dir
 /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/ELF2UF2Build.dir
 /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/edit_cache.dir
 /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/rebuild_cache.dir
