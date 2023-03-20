@@ -1,9 +1,6 @@
 [submodule "tools/picoprobe"]
 	path = tools/picoprobe
 	url = https://github.com/raspberrypi/picoprobe.git
-[submodule "assignments/assignment02"]
-	path = assignments/assignment02
-	url = git@github.com:confinlay/assignment02.git
 [submodule "assignments/assign02"]
 	path = assignments/assign02
-	url = git@github.com:confinlay/assign02.git
+	url = git@gitlab.scss.tcd.ie:finlayc3/assign02.git
