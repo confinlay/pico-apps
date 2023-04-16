@@ -38,7 +38,6 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
   "LIB_PICO_MALLOC=1"
   "LIB_PICO_MEM_OPS=1"
   "LIB_PICO_MEM_OPS_PICO=1"
-  "LIB_PICO_MULTICORE=1"
   "LIB_PICO_PLATFORM=1"
   "LIB_PICO_PRINTF=1"
   "LIB_PICO_PRINTF_PICO=1"
@@ -68,6 +67,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
+  "."
   "/Users/conor/Desktop/pico/pico-sdk/src/common/pico_stdlib/include"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/include"
   "/Users/conor/Desktop/pico/pico-sdk/src/common/pico_base/include"
@@ -105,7 +105,7 @@ set(CMAKE_ASM_TARGET_INCLUDE_PATH
   "/Users/conor/Desktop/pico/pico-sdk/src/common/pico_binary_info/include"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/include"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include"
-  "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/include"
+  "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/include"
   )
 
 # The set of dependency files which are needed:
@@ -123,6 +123,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj.d"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj.d"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj.d"
+  "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj.d"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj.d"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj.d"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj.d"
@@ -136,7 +137,6 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj.d"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj.d"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj.d"
-  "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj.d"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj.d"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj.d"
   "/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj" "gcc" "CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj.d"

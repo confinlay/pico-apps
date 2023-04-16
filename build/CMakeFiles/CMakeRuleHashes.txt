@@ -1,6 +1,7 @@
 # Hashes of file build rules.
 d790a5f26ce045e2ea0389387a0e9a81 CMakeFiles/ELF2UF2Build
 c2cafebb325fc36f1395978ab02ee9d9 CMakeFiles/ELF2UF2Build-complete
+d790a5f26ce045e2ea0389387a0e9a81 CMakeFiles/assign02_ws2812_pio_h
 e6113ee7ad1ce576a3e51952262c4376 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-build
 00055ff26922d827e66e05c02fde2d2c elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-configure
 03f54f43f831a1f7acc9692a8643c8aa elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-download
@@ -8,7 +9,6 @@ e6113ee7ad1ce576a3e51952262c4376 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-bui
 c6590e751bc5fd3cb51897d6acecfa24 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-mkdir
 fe60e0f09be1234de94395cffbe18ee4 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-patch
 00d1fcd7c6e4e0d306fe732f42abdf17 elf2uf2/src/ELF2UF2Build-stamp/ELF2UF2Build-update
-9339c0c81e08f5649816e1640ef95fc8 led.pio.h
 41b60646f5989b14695364f957bb986e pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_bin
 41b60646f5989b14695364f957bb986e pico-sdk/src/rp2_common/boot_stage2/CMakeFiles/bs2_default_padded_checksummed_asm
 b437a64dd6ca867bd64a4fac5682ace0 pico-sdk/src/rp2_common/boot_stage2/bs2_default.bin
@@ -26,3 +26,4 @@ d2ed73137024bd180d7c9f04f320efb1 pico-sdk/src/rp2_common/cyw43_driver/pioasm/src
 d41c319fb2ecb2b56d1f9bd5df3f2c58 pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-mkdir
 e8f4e42358e74a500bb712d6c7a3109e pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-patch
 75a5ffaa8f7089a0e181ae7b763f5284 pico-sdk/src/rp2_common/cyw43_driver/pioasm/src/PioasmBuild-stamp/PioasmBuild-update
+302fb718702e8f24a6c637eedf22cab0 ws2812.pio.h

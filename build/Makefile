@@ -57,7 +57,7 @@ RM = /opt/homebrew/Cellar/cmake/3.25.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/conor/Desktop/pico/pico-apps/labs/lab07
+CMAKE_SOURCE_DIR = /Users/conor/Desktop/pico/pico-apps/assignments/assign02
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/conor/Desktop/pico/pico-apps/build
@@ -117,17 +117,30 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named lab07
+# Target rules for targets named assign02
 
 # Build rule for target.
-lab07: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 lab07
-.PHONY : lab07
+assign02: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 assign02
+.PHONY : assign02
 
 # fast build rule for target.
-lab07/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/build
-.PHONY : lab07/fast
+assign02/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/build
+.PHONY : assign02/fast
+
+#=============================================================================
+# Target rules for targets named assign02_ws2812_pio_h
+
+# Build rule for target.
+assign02_ws2812_pio_h: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 assign02_ws2812_pio_h
+.PHONY : assign02_ws2812_pio_h
+
+# fast build rule for target.
+assign02_ws2812_pio_h/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02_ws2812_pio_h.dir/build.make CMakeFiles/assign02_ws2812_pio_h.dir/build
+.PHONY : assign02_ws2812_pio_h/fast
 
 #=============================================================================
 # Target rules for targets named ELF2UF2Build
@@ -225,7 +238,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.obj: Use
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.i: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
@@ -233,7 +246,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.i: Users
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.s: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
@@ -241,7 +254,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.s: Users
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.obj: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
@@ -249,7 +262,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.obj: Users/cono
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.i: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
@@ -257,7 +270,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.i: Users/conor/
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.s: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
@@ -265,7 +278,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.s: Users/conor/
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/lock_core.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.obj: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
@@ -273,7 +286,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.obj: Users/conor/De
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.i: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.i
@@ -281,7 +294,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.i: Users/conor/Desk
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.s: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.s
@@ -289,7 +302,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.s: Users/conor/Desk
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/mutex.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.obj: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.obj
@@ -297,7 +310,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.obj: Users/conor/Desk
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.i: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.i
@@ -305,7 +318,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.i: Users/conor/Deskto
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.s: Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.s
@@ -313,7 +326,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.s: Users/conor/Deskto
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/sem.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.obj: Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
@@ -321,7 +334,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.obj: Users/conor/Des
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.i: Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.i
@@ -329,7 +342,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.i: Users/conor/Deskt
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.s: Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.s
@@ -337,7 +350,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.s: Users/conor/Deskt
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/time.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
@@ -345,7 +358,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.obj: Users
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.i: Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
@@ -353,7 +366,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.i: Users/c
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.s: Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
@@ -361,7 +374,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.s: Users/c
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_time/timeout_helper.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.obj: Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.obj
@@ -369,7 +382,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.obj: Users/conor
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.i: Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.i
@@ -377,7 +390,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.i: Users/conor/D
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.s: Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.s
@@ -385,7 +398,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.s: Users/conor/D
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/datetime.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.obj: Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
@@ -393,7 +406,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.obj: Users/conor/De
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.i: Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.i
@@ -401,7 +414,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.i: Users/conor/Desk
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.s: Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.s
@@ -409,7 +422,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.s: Users/conor/Desk
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/pheap.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.obj: Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.obj
@@ -417,7 +430,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.obj: Users/conor/De
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.i: Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.i
@@ -425,7 +438,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.i: Users/conor/Desk
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.s: Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.s
@@ -433,7 +446,7 @@ Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.s: Users/conor/Desk
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/common/pico_util/queue.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
@@ -441,7 +454,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.obj: Users
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
@@ -449,7 +462,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.i: Users/c
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
@@ -457,7 +470,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.s: Users/c
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
@@ -465,7 +478,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.obj: Use
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
@@ -473,7 +486,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.i: Users
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
@@ -481,7 +494,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.s: Users
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
@@ -489,7 +502,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_divider/divider.obj: U
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_divider/divider.S.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
@@ -497,7 +510,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.obj: Users/c
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
@@ -505,7 +518,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.i: Users/con
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
@@ -513,7 +526,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.s: Users/con
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
@@ -521,7 +534,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.obj: Users/con
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
@@ -529,7 +542,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i: Users/conor
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
@@ -537,7 +550,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s: Users/conor
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
@@ -545,15 +558,39 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+
+Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj
+
+# target to build an object file
+Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.obj
+
+Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i
+
+# target to preprocess a source file
+Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.i
+
+Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s
+
+# target to generate assembly for a file
+Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
+.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
@@ -561,7 +598,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i: Users/conor
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
@@ -569,7 +606,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s: Users/conor
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
@@ -577,7 +614,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.obj: Users/c
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
@@ -585,7 +622,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.i: Users/con
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
@@ -593,7 +630,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.s: Users/con
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
@@ -601,7 +638,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.obj: Users
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
@@ -609,7 +646,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.i: Users/c
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
@@ -617,7 +654,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.s: Users/c
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
@@ -625,7 +662,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.obj: Users/c
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
@@ -633,7 +670,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.i: Users/con
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
@@ -641,7 +678,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.s: Users/con
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_uart/uart.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
@@ -649,7 +686,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.obj: Users/c
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
@@ -657,7 +694,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.i: Users/con
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
@@ -665,7 +702,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.s: Users/con
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_vreg/vreg.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
@@ -673,7 +710,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.obj:
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
@@ -681,7 +718,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.i: U
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
@@ -689,7 +726,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.s: U
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
@@ -697,7 +734,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.obj: Users/c
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
@@ -705,7 +742,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.i: Users/con
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
@@ -713,7 +750,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.s: Users/con
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
@@ -721,7 +758,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.obj:
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
@@ -729,7 +766,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.obj: Users
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
@@ -737,7 +774,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.i: Users/c
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
@@ -745,7 +782,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.s: Users/c
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
@@ -753,7 +790,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_divider/divider.obj: Users
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
@@ -761,7 +798,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.obj: U
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
@@ -769,7 +806,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.obj
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
@@ -777,7 +814,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.i: 
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
@@ -785,7 +822,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.s: 
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
@@ -793,7 +830,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.obj: Us
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
@@ -801,7 +838,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.i: User
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
@@ -809,7 +846,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.s: User
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_math.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
@@ -817,7 +854,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
@@ -825,7 +862,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.obj: Use
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
@@ -833,7 +870,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.obj: 
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
@@ -841,7 +878,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.i: Us
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
@@ -849,7 +886,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.s: Us
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
@@ -857,7 +894,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.obj: User
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
@@ -865,7 +902,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.i: Users/
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
@@ -873,7 +910,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.s: Users/
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_math.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
@@ -881,7 +918,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.ob
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_float/float_v1_rom_shim.S.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
@@ -889,7 +926,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_a
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
@@ -897,7 +934,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.obj: Us
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
@@ -905,7 +942,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i: User
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
@@ -913,7 +950,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s: User
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
@@ -921,39 +958,15 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj:
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-
-Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj
-
-# target to build an object file
-Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.obj
-
-Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
-.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i
-
-# target to preprocess a source file
-Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
-.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.i
-
-Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
-.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s
-
-# target to generate assembly for a file
-Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
-.PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
@@ -961,7 +974,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.i: Users
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
@@ -969,7 +982,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.s: Users
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
@@ -977,7 +990,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.obj: Users/c
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
@@ -985,7 +998,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.i: Users/con
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
@@ -993,7 +1006,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.s: Users/con
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
@@ -1001,7 +1014,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.obj: Users
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
@@ -1009,7 +1022,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.i: Users/c
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
@@ -1017,7 +1030,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.s: Users/c
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
@@ -1025,7 +1038,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
@@ -1033,7 +1046,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
@@ -1041,7 +1054,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1049,7 +1062,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.obj: Us
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
@@ -1057,7 +1070,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.o
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
@@ -1065,7 +1078,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.i
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
@@ -1073,7 +1086,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.s
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_standard_link/new_delete.cpp.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
@@ -1081,7 +1094,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.obj: Users/con
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
@@ -1089,7 +1102,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.i: Users/conor
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
@@ -1097,7 +1110,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.s: Users/conor
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
@@ -1105,7 +1118,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.obj:
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
@@ -1113,7 +1126,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.i: U
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
@@ -1121,7 +1134,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.s: U
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/stdio_uart.c.s
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
@@ -1129,7 +1142,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj: Users/c
 
 # target to build an object file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.obj
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
@@ -1137,7 +1150,7 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i: Users/con
 
 # target to preprocess a source file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.i
 
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
@@ -1145,40 +1158,40 @@ Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s: Users/con
 
 # target to generate assembly for a file
 Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 .PHONY : Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.c.s
 
-lab07.obj: lab07.S.obj
-.PHONY : lab07.obj
+assign02.obj: assign02.S.obj
+.PHONY : assign02.obj
 
 # target to build an object file
-lab07.S.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/lab07.S.obj
-.PHONY : lab07.S.obj
+assign02.S.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/assign02.S.obj
+.PHONY : assign02.S.obj
 
-lab07.obj: lab07.c.obj
-.PHONY : lab07.obj
+assign02.obj: assign02.c.obj
+.PHONY : assign02.obj
 
 # target to build an object file
-lab07.c.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/lab07.c.obj
-.PHONY : lab07.c.obj
+assign02.c.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/assign02.c.obj
+.PHONY : assign02.c.obj
 
-lab07.i: lab07.c.i
-.PHONY : lab07.i
+assign02.i: assign02.c.i
+.PHONY : assign02.i
 
 # target to preprocess a source file
-lab07.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/lab07.c.i
-.PHONY : lab07.c.i
+assign02.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/assign02.c.i
+.PHONY : assign02.c.i
 
-lab07.s: lab07.c.s
-.PHONY : lab07.s
+assign02.s: assign02.c.s
+.PHONY : assign02.s
 
 # target to generate assembly for a file
-lab07.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab07.dir/build.make CMakeFiles/lab07.dir/lab07.c.s
-.PHONY : lab07.c.s
+assign02.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/assign02.dir/build.make CMakeFiles/assign02.dir/assign02.c.s
+.PHONY : assign02.c.s
 
 # Help Target
 help:
@@ -1190,12 +1203,13 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... ELF2UF2Build"
 	@echo "... PioasmBuild"
+	@echo "... assign02_ws2812_pio_h"
 	@echo "... bs2_default_bin"
 	@echo "... bs2_default_padded_checksummed_asm"
 	@echo "... cyw43_driver_picow_cyw43_bus_pio_spi_pio_h"
 	@echo "... cyw43_firmware_package"
+	@echo "... assign02"
 	@echo "... bs2_default"
-	@echo "... lab07"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.obj"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.i"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/common/pico_sync/critical_section.s"
@@ -1237,6 +1251,9 @@ help:
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.i"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq.s"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.obj"
+	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.obj"
+	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.i"
+	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/pio.s"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.obj"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.i"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pll/pll.s"
@@ -1284,9 +1301,6 @@ help:
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.i"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_malloc/pico_malloc.s"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.obj"
-	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.obj"
-	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.i"
-	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_multicore/multicore.s"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.obj"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.i"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_platform/platform.s"
@@ -1312,10 +1326,10 @@ help:
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.obj"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.i"
 	@echo "... Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdlib/stdlib.s"
-	@echo "... lab07.obj"
-	@echo "... lab07.obj"
-	@echo "... lab07.i"
-	@echo "... lab07.s"
+	@echo "... assign02.obj"
+	@echo "... assign02.obj"
+	@echo "... assign02.i"
+	@echo "... assign02.s"
 .PHONY : help
 
 

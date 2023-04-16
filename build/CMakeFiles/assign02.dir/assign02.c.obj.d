@@ -20,11 +20,16 @@ CMakeFiles/assign02.dir/assign02.c.obj: \
  /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/stdlib.h \
  /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/machine/stdlib.h \
  /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/alloca.h \
+ /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/math.h \
+ /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/string.h \
+ /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/_locale.h \
+ /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/strings.h \
+ /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/sys/string.h \
+ /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h \
  /Users/conor/Desktop/pico/pico-sdk/src/common/pico_stdlib/include/pico/stdlib.h \
  /Users/conor/Desktop/pico/pico-sdk/src/common/pico_base/include/pico.h \
  /Users/conor/Desktop/pico/pico-sdk/src/common/pico_base/include/pico/types.h \
  /Users/conor/Desktop/pico/pico-sdk/src/common/pico_base/include/pico/assert.h \
- /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdbool.h \
  /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/assert.h \
  /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/lib/gcc/arm-none-eabi/12.2.1/include/stdint.h \
  /Applications/ArmGNUToolchain/12.2.rel1/arm-none-eabi/arm-none-eabi/include/stdint.h \
@@ -62,6 +67,9 @@ CMakeFiles/assign02.dir/assign02.c.obj: \
  /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/uart.h \
  /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/dreq.h \
  /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/pico_stdio_uart/include/pico/stdio_uart.h \
+ /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_watchdog/include/hardware/watchdog.h \
+ /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/watchdog.h \
+ /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/watchdog.h \
  /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
  /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
  /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
@@ -69,4 +77,4 @@ CMakeFiles/assign02.dir/assign02.c.obj: \
  /Users/conor/Desktop/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
  /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
  /Users/conor/Desktop/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \
- /Users/conor/Desktop/pico/pico-apps/build/led.pio.h
+ /Users/conor/Desktop/pico/pico-apps/build/ws2812.pio.h

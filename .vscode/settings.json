@@ -34,6 +34,6 @@
         "*.S": "arm",
         "*.h": "c"
     },
-    "cmake.sourceDirectory": "${workspaceFolder}/labs/lab07",
+    "cmake.sourceDirectory": "${workspaceFolder}/assignments/assign02",
 }
 ´
