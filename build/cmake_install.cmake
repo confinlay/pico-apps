@@ -1,4 +1,4 @@
-# Install script for directory: /Users/conor/Desktop/pico/pico-apps/assignments/assign02
+# Install script for directory: /Users/conor/Desktop/pico/pico-apps/labs/lab09
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

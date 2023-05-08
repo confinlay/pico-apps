@@ -53,7 +53,7 @@ RM = /opt/homebrew/Cellar/cmake/3.25.2/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/conor/Desktop/pico/pico-apps/assignments/assign02
+CMAKE_SOURCE_DIR = /Users/conor/Desktop/pico/pico-apps/labs/lab09
 
 # The top-level build directory on which CMake was run.
 CMAKE_BINARY_DIR = /Users/conor/Desktop/pico/pico-apps/build
@@ -137,6 +137,6 @@ CMakeFiles/ELF2UF2Build.dir/clean:
 .PHONY : CMakeFiles/ELF2UF2Build.dir/clean
 
 CMakeFiles/ELF2UF2Build.dir/depend:
-	cd /Users/conor/Desktop/pico/pico-apps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/conor/Desktop/pico/pico-apps/assignments/assign02 /Users/conor/Desktop/pico/pico-apps/assignments/assign02 /Users/conor/Desktop/pico/pico-apps/build /Users/conor/Desktop/pico/pico-apps/build /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/conor/Desktop/pico/pico-apps/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/conor/Desktop/pico/pico-apps/labs/lab09 /Users/conor/Desktop/pico/pico-apps/labs/lab09 /Users/conor/Desktop/pico/pico-apps/build /Users/conor/Desktop/pico/pico-apps/build /Users/conor/Desktop/pico/pico-apps/build/CMakeFiles/ELF2UF2Build.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ELF2UF2Build.dir/depend
 

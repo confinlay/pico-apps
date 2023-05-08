@@ -19,4 +19,4 @@ target_link_libraries(lab07 pico_stdlib pico_multicore)
 pico_add_extra_outputs(lab07)
 
 # Add the URL via pico_set_program_url.
-#apps_auto_set_url(lab06)
+# apps_auto_set_url(lab06)
