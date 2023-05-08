@@ -1,18 +1,17 @@
 # Raspberry Pi Pico RP2040 Application Repository
 
-This repository contains 12 applications created as part of a "Microprocessor Systems" university module. They were designed to run on a Raspberry Pi Pico RP2040, and were programmed using a combination of ARM Assembly and C.
-**Yet to be completed: Labs 7-10, Assignment 2.**
+This repository contains 9 applications created as part of a "Microprocessor Systems" university module. They were designed to run on a Raspberry Pi Pico RP2040, and were programmed using a combination of ARM Assembly and C.
 
-## assignments
+## Assignments
 
 ### assignments/assign01
 A program which utilised alarm and IO hardware interrupts to allow for the build-in LED on the Pi Pico board to blink at a given rate. Interrupt service routines were created for each of 3 onboard buttons to allow for the LED flashing rate to be doubled, halved, stopped and reset based on the user's input. This program was entirely written in ARM assembly, only utilising basic wrapper functions written in C for IO initialising.
 
 
 ### assignments/assign02
-A morse code game written in ARM assembly which tasks the player with correctly inputting more code messages using the built in button on the Pi Pico board. 
+A morse code game written in ARM assembly which tasks the player with correctly inputting morse code messages using the built in button on the Pi Pico board. 
 
-## labs
+## Labs
 
 Top-level folder containing skeleton project templates for the ten course lab exercises.
 
@@ -36,12 +35,17 @@ Exercise to flash a second pico device to become a "picoprobe" for debugging pur
 
 A re-implementation of the blink project using interrupt service handler routines.
 
-### labs/lab05
+### labs/lab06
 
 A program to measure the effect of running proccesses in parallel using the Pico's second core, rather than sequentially. The test functions used were the wallis product calculations from lab02.
-## examples
 
-Top level folder containing all example projects.
+### labs/lab07
+
+An altered version of the program from lab07 which also measures the effect disabling/enabling chaching on the Pi Pico has on its performance.
+
+## Examples
+
+Top level folder containing all example projects used in the development of labs 1-7 as well as both assignments.
 
 ### examples/blink_asm
 
